@@ -1,0 +1,674 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* Header Css */
+.header {
+	width: 100%;
+	overflow: hidden;
+}
+.firstSection {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+.phone,
+.mail {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px 0px;
+}
+.phone {
+	margin-left: 10px;
+}
+.firstSection img {
+	width: 20px;
+}
+
+.mail {
+	justify-content: flex-end;
+	margin-right: 10px;
+}
+
+.secondSection {
+	width: 100%;
+	background-color: rgb(137 182 223 / 39%);
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.secondSection h3 {
+	font-size: 30px;
+	font-weight: 700;
+	color: #1c1eff;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.hamburger {
+	display: none;
+	margin-right: 30px;
+	font-size: 20px;
+}
+.nav ul {
+	display: flex;
+	list-style: none;
+}
+.nav ul li {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.nav ul li a {
+	margin-right: 40px;
+	text-decoration: none;
+	color: black;
+}
+.nav ul li a:hover {
+	color: #1c1eff;
+}
+.content {
+	width: 35%;
+}
+.content h1 {
+	margin-top: 150px;
+	font-size: 40px;
+	color: #1c1eff;
+}
+.content p {
+	padding: 0px 3px;
+	margin-top: 20px;
+	color: rgb(105, 105, 105);
+}
+.main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.sliderImage {
+	min-width: auto;
+	overflow: hidden;
+}
+.btn {
+	background-color: orange;
+	color: white;
+	border: 2px solid orange;
+	padding: 10px 50px;
+	border-radius: 5px;
+	margin-top: 30px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.btn:hover {
+	background-color: #fff;
+	border: 2px solid orange;
+	color: orange;
+}
+
+/* Cards Css */
+
+.cards-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	flex-wrap: wrap;
+}
+.card img {
+	width: 20%;
+	margin-top: 50px;
+}
+
+.card {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.card1,
+.card2,
+.card3 {
+	text-align: center;
+	width: 300px;
+	height: 200px;
+	margin: 20px;
+	box-shadow: 1px 1px 10px 1px #d3d3d3;
+	background-color: white;
+	cursor: pointer;
+}
+
+.card h3 {
+	padding-top: 15px;
+}
+.card1:hover,
+.card2:hover,
+.card3:hover {
+	background-color: orange;
+	color: white;
+}
+
+/* About section */
+.about {
+	display: flex;
+	margin-top: 15%;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10%;
+	gap: 30px;
+}
+.aboutImage {
+	display: flex;
+	flex-wrap: wrap;
+	padding-right: 70px;
+}
+.aboutImage img {
+	max-width: 100%;
+}
+
+.aboutContent {
+	margin-left: 270px;
+	width: 30%;
+}
+
+.aboutContent p {
+	color: rgb(105, 105, 105);
+}
+.readMoreBtn {
+	background-color: rgb(60, 60, 255);
+	color: white;
+	padding: 10px 50px;
+	border: 2px solid rgb(60, 60, 255);
+	margin-top: 30px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.2s;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.readMoreBtn:hover {
+	background-color: white;
+	color: rgb(60, 60, 255);
+	border: 2px solid rgb(60, 60, 255);
+}
+
+/* Service section1 Css */
+
+.service-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(137 182 223 / 39%);
+	padding-top: 10%;
+	padding-bottom: 4%;
+}
+.serviceContent {
+	width: 45%;
+	padding: 0px 20px;
+	text-align: left;
+}
+.serviceContent h1,
+.aboutContent h1 {
+	font-size: 34px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+.serviceContent p {
+	color: rgb(105, 105, 105);
+	font-size: 17px;
+}
+.serviceCard1,
+.serviceCard2,
+.serviceCard3 {
+	cursor: pointer;
+}
+.serviceCard1:hover,
+.serviceCard2:hover,
+.serviceCard3:hover {
+	background-color: orange;
+	color: white;
+}
+
+/* Service section2 Css */
+
+.ourServices h1 {
+	font-size: 40px;
+	color: black;
+	padding-bottom: 30px;
+	margin-top: 10%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.ourServices img {
+	width: 20%;
+}
+.serviceContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10%;
+}
+.service-cards {
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.service-cards h3 {
+	text-transform: capitalize;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.serviceCard1,
+.serviceCard2,
+.serviceCard3 {
+	padding: 40px;
+	margin: 20px;
+	box-shadow: 1px 1px 10px 1px #d3d3d3;
+	background-color: white;
+}
+.viewBtn {
+	background-color: rgb(60, 60, 255);
+	color: white;
+	padding: 10px 50px;
+	border: 2px solid rgb(60, 60, 255);
+	margin-top: 30px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.viewBtn:hover {
+	background-color: white;
+	border: 1px solid rgb(60, 60, 255);
+	color: rgb(60, 60, 255);
+}
+
+/* Client section Css */
+
+.clientContainer h1 {
+	font-size: 33px;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+.clientCard {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2%;
+	margin-top: 5%;
+}
+.clientCard img {
+	border-radius: 50%;
+}
+.client1,
+.client2 {
+	padding: 20px;
+	box-shadow: 1px 1px 10px 1px #d3d3d3;
+	background-color: white;
+	width: 35%;
+	margin: 20px;
+}
+.clientCard p {
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.clientDetails {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.name {
+	font-size: 20px;
+	color: black;
+	padding-left: 20px;
+}
+.quote {
+	font-size: 20px;
+	color: rgb(105, 105, 105);
+	padding-left: 30%;
+}
+.arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.arrow img {
+	width: 20px;
+	cursor: pointer;
+}
+.arrow :hover {
+	background-color: #211717;
+}
+
+.left,
+.right {
+	margin: 20px;
+	cursor: pointer;
+	padding: 10px 30px;
+	background-color: rgb(60, 60, 255);
+}
+
+/* Contact Css */
+
+.contactUs {
+	margin-top: 2%;
+	padding: 10px 80px;
+	margin-bottom: 10%;
+	width: 100%;
+}
+.contactUs h1 {
+	font-size: 40px;
+	color: black;
+	padding-bottom: 30px;
+	margin-top: 10%;
+	text-align: left;
+	text-transform: uppercase;
+}
+form {
+	padding: 0px 10px;
+	width: 50%;
+}
+.form-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+input,
+textarea {
+	padding: 20px 10px;
+	margin: 10px 0px;
+	border: none;
+	box-shadow: 1px 1px 10px 1px #d3d3d3;
+}
+.contactForm {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+iframe {
+	width: 50%;
+	height: 350px;
+	transform: translateY(-10%);
+	flex-wrap: wrap;
+}
+
+/* Footer Css */
+
+.footer {
+	display: flex;
+	justify-content: center;
+}
+.footerSection {
+	background-color: rgb(0, 0, 92);
+	color: white;
+	padding: 20px;
+	position: relative;
+}
+.footerSection h1 {
+	font-size: 38px;
+	color: white;
+	padding-bottom: 5%;
+	margin-top: 5%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.line-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.line {
+	position: absolute;
+	width: 65%;
+	height: 2px;
+	background-color: white;
+	z-index: 0;
+}
+
+.icon-container {
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 60px;
+	margin: 0px 40px;
+}
+
+.iconBg {
+	background-color: rgb(60, 60, 255);
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.icon img {
+	width: 30px;
+	height: 30px;
+}
+
+.icon p {
+	margin-top: 5px;
+	color: white;
+}
+
+.follow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+.follow h3 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+.socialMedia {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	gap: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin: 20px auto;
+	max-width: 320px;
+}
+
+.socialMediaIcon {
+	display: flex;
+	align-items: center;
+}
+
+.socialMediaIcon img {
+	width: 30px;
+	height: 40px;
+}
+
+.line2 {
+	position: absolute;
+	top: 90%;
+	left: 25%;
+	width: 50%;
+	height: 2px;
+	background-color: white;
+}
+.copyRight {
+	display: flex;
+	justify-content: center;
+	margin-top: 6%;
+	text-transform: capitalize;
+	font-size: 15px;
+}
+
+/* Media query */
+
+@media (max-width: 600px) {
+	.line-container {
+		flex-direction: column;
+	}
+
+	.line {
+		width: 2px;
+		height: 520px;
+		position: absolute;
+	}
+
+	.icon-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.icon {
+		margin: 70px 0px;
+	}
+	.socialMedia {
+		max-width: 100%;
+		margin-bottom: 70px;
+	}
+
+	.socialMediaIcon {
+		margin: 0 10px;
+	}
+	.line2 {
+		width: 98%;
+		top: 93%;
+		left: 1%;
+	}
+	.copyRight {
+		font-size: 15px;
+		margin-top: 10%;
+	}
+}
+@media screen and (max-width: 1033px) {
+	.card {
+		position: relative;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.about {
+		flex-direction: column;
+		width: 100vw;
+	}
+	.aboutContent {
+		width: 100%;
+		margin-bottom: 40px;
+		margin-left: 10px;
+		padding: 0px 10px;
+	}
+	.aboutImage {
+		margin: 0 auto;
+		padding-right: 0px;
+	}
+	.aboutImage img {
+		width: 100%;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 928px) {
+	.service-section img {
+		display: none;
+	}
+	.serviceContent {
+		width: 100%;
+	}
+	.service-cards {
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 900px) {
+	.clientCard {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.client1,
+	.client2 {
+		width: 80%;
+	}
+	.contactForm {
+		flex-direction: column;
+	}
+	form {
+		width: 100%;
+	}
+	iframe {
+		width: 100%;
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 811px) {
+	.main {
+		flex-direction: column;
+	}
+	.content {
+		width: 100%;
+	}
+	.sliderImage {
+		margin-top: 30px;
+	}
+	.contactUs {
+		padding: 10px 30px;
+	}
+	.form-group {
+		margin-right: 0px;
+	}
+	form {
+		width: 100%;
+		margin: 0px auto;
+	}
+}
+@media screen and (max-width: 568px) {
+	.nav {
+		display: none;
+	}
+	.hamburger {
+		display: block;
+	}
+}
+@media screen and (max-width: 375px) {
+	.phone img,
+	.mail img {
+		display: none;
+	}
+	.ourServices img {
+		width: 30%;
+	}
+	.serviceCard1,
+	.serviceCard2,
+	.serviceCard3 {
+		margin: 20px 0px;
+	}
+}
